@@ -1,0 +1,562 @@
+header{
+	grid-area: h;
+	background-image: url("../media/header/bg2.png"), url("../media/header/bg.jpg");
+	background-repeat: no-repeat, repeat;
+	background-position: center, left;
+	max-width: 100%;
+	max-height: auto;
+	box-sizing: border-box;
+	margin: 0px;
+	padding-top: 5%;
+	padding-bottom: 5%;
+	background-color: #6e4021;
+}
+
+nav{
+	grid-area: n; 
+	background-color: #6e4021;
+	text-align: center;
+	max-width: 100%;
+	margin: 0px;
+	border-style: solid;
+	border-width: 1px;
+	padding: 15px, 0px, 15px, 0px;
+	box-sizing: border-box;
+	width: 100%;
+}
+
+main{
+	grid-area: m;
+	border-style: none solid none solid;
+	border-width: 1px;
+	padding-bottom: 20vh;
+	box-sizing: border-box;
+	margin: auto;
+}
+
+footer{
+	grid-area: f;
+	background-image: url("../media/footer/bg.jpg");
+	max-width: 100%;
+	max-height: auto;
+	box-sizing: border-box;
+	padding-top: 5%;
+	padding-bottom: 5%;
+	border-style: solid none none none;
+	border-color: black;
+	border-width: 1px;
+}
+
+aside{
+	grid-area: a;
+}
+
+/*Phones and stuff*/
+@media screen and (max-width:600px){
+	.container{
+		max-width: 100%;
+		display: grid;
+		grid-template-columns: repeat(10, 1fr);
+		margin: 0 auto;
+		grid-template-areas:
+					"h h h h h h h h h h"
+					"n n n n n n n n n n"
+					"m m m m m m m m m m"
+					"m m m m m m m m m m"
+					"m m m m m m m m m m"
+					"m m m m m m m m m m"
+					"a a a a a a a a a a"
+					"f f f f f f f f f f";
+	}
+	
+	header{
+		padding-top: 15%;
+		padding-bottom: 15%;
+		background-size: 350px, 150px;
+	}
+	
+	footer
+	{
+		padding-top: 15%;
+		padding-bottom: 15%;
+		background-size: 150px;
+	}
+	.dropbtn {  
+		color: black;  
+		border: none;
+		background-color: inherit;
+		padding: 2vh;
+		min-width: 80vw;
+		font-size: 1em;
+		cursor: pointer;
+		margin: auto;
+		float: center !important;
+		position: relative !important;
+	}
+	
+	.dropdown {  
+		display: inline-block;  
+		position: relative !important;
+		float: center !important;
+	}
+
+	.dropdown-content {  
+		position: absolute !important;  
+		padding: none;
+		min-width: 80vw;
+		text-align: center;
+		background-color: #b1a381;  
+		display: none !important;  
+		float: none !important;
+		z-index: 1;  
+	}  
+
+	.mainsu{
+		max-width:100%; 
+		margin-top:5%;
+		margin-bottom: 5%;
+		padding-top: 3%;
+		padding-bottom:3%;
+		padding-left: 1ex;
+		padding-right: 1ex;
+		border-style: solid;
+		border-width: 1px;
+		border-radius: 25px;
+	}
+	
+	.btn {
+		border: none;
+		background-color: inherit;
+		padding: 3vh 30vw;
+		font-size: 1em;
+		cursor: pointer;
+		margin:auto;
+	}
+	
+	.as{
+		width: 100%;
+		padding-bottom: 5vh;
+		border-style: none solid none solid; 
+		border-width: 1px; 
+	}
+	
+	.divastitle
+	{
+		font-size:170%; 
+		padding-top: 3vh;
+	}
+	
+	.divasnormal
+	{
+		font-size:110%; 
+		width: 90%;
+		margin: auto;
+	}
+}
+
+/*Tablets*/
+@media screen and (min-width:601px){
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {display:block;}
+	.container{
+		max-width: 100%;
+		display: grid;
+		grid-template-columns: repeat(10, 1fr);
+		margin: 0 auto;
+		grid-template-areas:
+					"h h h h h h h h h h"
+					"n n n n n n n n n n"
+					". m m m m m m m m ."
+					". m m m m m m m m ."
+					". m m m m m m m m ."
+					". m m m m m m m m ."
+					". a a a a a a a a ."
+					"f f f f f f f f f f";
+	}
+	
+	header{
+		padding-top: 10%;
+		padding-bottom: 10%;
+		background-size: 500px, 150px;
+	}
+	
+	footer{
+		padding-top: 10%;
+		padding-bottom: 10%;
+		background-size: 150px;
+	}
+	.dropbtn {  
+		color: black;  
+		border: none;
+		background-color: inherit;
+		padding: 2vh;
+		min-width: 20vw;
+		font-size: 1em;
+		cursor: pointer;
+		margin: auto;
+		position: relative !important;
+	}
+	.dropdown {  
+		display: inline-block;  
+		position: relative !important;
+		float: right;
+	}
+
+	.dropdown-content {  
+		position: absolute !important;  
+		padding: none;
+		min-width: 20vw;
+		text-align: center;
+		background-color: #b1a381;  
+		display: none !important;  
+		float: none !important;
+		z-index: 1;  
+	}  
+	.button-container form,
+	.button-container form div {
+		display: inline;
+	}
+
+	.button-container button {
+		display: inline;
+		vertical-align: middle;
+	}
+
+	.centerpic{
+		display: block; 
+		margin-left:auto; 
+		margin-right:auto;
+	}
+	.mainsu{
+		max-width:100%; 
+		margin-top:5%;
+		margin-bottom: 5%;
+		padding-top: 3%;
+		padding-bottom:3%;
+		padding-left: 10vw;
+		padding-right: 10vw;
+		border-style: solid;
+		border-width: 1px;
+		border-radius: 25px;
+	}
+	.btn {
+		border: none;
+		background-color: inherit;
+		padding: 2vh 3vw;
+		font-size: 1em;
+		cursor: pointer;
+		margin:auto;
+	}
+	
+	.as{
+		width: 100%;
+		padding-bottom: 5vh;
+		border-style: none solid none solid; 
+		border-width: 1px; 
+	}
+	
+	.divastitle
+	{
+		font-size:170%; 
+		padding-top: 3vh;
+	}
+	
+	.divasnormal
+	{
+		font-size:110%; 
+		width: 90%;
+		margin: auto;
+	}
+}
+/*Laptops/Large Tablets*/
+@media screen and (min-width:962px){
+	.container{
+		max-width: 100%;
+		display: grid;
+		grid-template-columns: repeat(10, 1fr);
+		margin: 0 auto;
+		grid-template-areas:
+					"h h h h h h h h h h"
+					"n n n n n n n n n n"
+					"a a m m m m m m . ."
+					"a a m m m m m m . ."
+					"a a m m m m m m . ."
+					"a a m m m m m m . ."
+					"f f f f f f f f f f";
+	}
+	
+	header{
+		background-image: url("../media/header/bg2.png"), url("../media/header/bg.jpg");
+		background-repeat: no-repeat, repeat;
+		background-position: center, left;
+		background-size: 700px, auto;
+		padding-top: 5%;
+		padding-bottom: 5%;
+		background-color: #6e4021;
+	}
+	
+	footer
+	{
+		padding-top: 5%;
+		padding-bottom: 5%;
+		background-size: auto;
+	}
+	.dropbtn {  
+		color: black;  
+		border: none;
+		background-color: inherit;
+		padding: 2vh;
+		min-width: 15vw;
+		font-size: 1em;
+		cursor: pointer;
+		margin: auto;
+		position: relative !important;
+	}
+	.dropdown {  
+		display: inline-block;  
+		position: relative !important;
+		float: right;
+	}
+
+	.dropdown-content {  
+		position: absolute !important;  
+		padding: none;
+		min-width: 15vw;
+		background-color: #b1a381;  
+		display: none !important;  
+		float: none !important;
+		z-index: 1;  
+	}  
+	.button-container form,
+	.button-container form div {
+		display: inline;
+	}
+
+	.button-container button {
+		display: inline;
+		vertical-align: middle;
+	}
+
+	.centerpic{
+		display: block; 
+		margin-left:auto; 
+		margin-right:auto;
+	}
+	.mainsu{
+		max-width:100%; 
+		margin-top:5%;
+		margin-bottom: 5%;
+		padding-top: 3%;
+		padding-bottom:3%;
+		padding-left: 10vw;
+		padding-right: 10vw;
+		border-style: solid;
+		border-width: 1px;
+		border-radius: 25px;
+	}
+	
+	.btn {
+		border: none;
+		background-color: inherit;
+		padding: 2vh 3vw;
+		font-size: 1em;
+		cursor: pointer;
+		margin:auto;
+	}
+	
+	.as{
+		border: none;
+		margin-top: 20vh;
+		width: 90%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	
+	.divastitle
+	{
+		font-size:170%; 
+		padding-top: 3vh;
+		border: solid; 
+		border-width: 1px; 
+		border-radius: 25px;
+	}
+	
+	.divasnormal
+	{
+		font-size:110%; 
+		width: 90%;
+		margin: auto;
+	}
+}
+/*Laptops/Desktops*/
+@media screen and (min-width:1400px){
+	
+	
+	.container{
+		max-width: 100%;
+		display: grid;
+		grid-template-columns: repeat(10, 1fr);
+		margin: 0 auto;
+		grid-template-areas:
+					"h h h h h h h h h h"
+					"n n n n n n n n n n"
+					"a a m m m m m m . ."
+					"a a m m m m m m . ."
+					"a a m m m m m m . ."
+					"a a m m m m m m . ."
+					"f f f f f f f f f f";
+	}	
+
+	header{
+		background-image: url("../media/header/bg2.png"), url("../media/header/bg.jpg");
+		background-repeat: no-repeat, repeat;
+		background-position: center, left;
+		background-size: 700px, auto;
+		padding-top: 5%;
+		padding-bottom: 5%;
+		background-color: #6e4021;
+	}
+	
+	footer
+	{
+		padding-top: 5%;
+		padding-bottom: 5%;
+		background-size: auto;
+	}
+	.dropbtn {  
+		color: black;  
+		border: none;
+		background-color: inherit;
+		padding: 3vh;
+		min-width: 8vw;
+		font-size: 100%;
+		cursor: pointer;
+		margin: auto;
+		position: relative !important;
+	}
+	.dropdown {  
+		display: inline-block;  
+		position: relative !important;
+		float: right;
+	}
+	.dropdown-content {  
+		position: absolute !important;  
+		padding: none;
+		min-width: 8vw;
+		background-color: #b1a381;  
+		display: none !important;  
+		float: none !important;
+		z-index: 1;  
+	}  
+	
+	.button-container form,
+	.button-container form div {
+		display: inline;
+	}
+
+	.button-container button {
+		display: inline;
+		vertical-align: middle;
+	}
+
+	.centerpic{
+		display: block; 
+		margin-left:auto; 
+		margin-right:auto;
+	}
+	.mainsu{
+		max-width:100%; 
+		margin-top:5%;
+		margin-bottom: 5%;
+		padding-top: 3%;
+		padding-bottom:3%;
+		padding-left: 7vw;
+		padding-right: 7vw;
+		border-style: solid;
+		border-width: 1px;
+		border-radius: 25px;
+	}
+	.btn {
+		border: none;
+		background-color: inherit;
+		padding: 3vh 3vw;
+		font-size: 100%;
+		cursor: pointer;
+		margin:auto;
+	}
+	
+	.as{
+		border: none;
+		margin-top: 20vh;
+		width: 90%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	
+	.divastitle
+	{
+		font-size:170%; 
+		padding-top: 3vh;
+		border: solid; 
+		border-width: 1px; 
+		border-radius: 25px;
+	}
+	
+	.divasnormal
+	{
+		font-size:110%; 
+		width: 90%;
+		margin: auto;
+	}
+}
+
+body{
+	margin: 0px;
+	padding: 0px;
+}
+
+.lsize{
+	font-size: 130%;
+}
+
+*, html {
+    margin: 0px;
+    padding: 0px;
+}
+.btn:hover {background: #b1a381;}
+
+a{
+	text-decoration: none;
+}
+a:link{
+	color: #9e8c61;
+}
+
+a:visited{
+	color: #3b2212;
+}
+
+a:hover{
+	color: black;
+	text-decoration: underline;
+}
+
+.dropdown-content a {  
+	color: black;
+	padding: 1vh 1vw;
+	padding: none;
+	float: none !important;
+	text-decoration: none;  
+	display: block !important;  
+}
+
+.dropdown-content a:hover {  
+	background-color: orange;  
+}  
+.dropdown:hover .dropdown-content {  
+	display: block !important;  
+}  
+.dropdown:hover .dropbtn {  
+	background-color: #b1a381;  
+}  
